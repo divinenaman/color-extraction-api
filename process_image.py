@@ -25,7 +25,7 @@ def preprocess_image(image_string):
 def color_extraction_model(image_string):
     image = preprocess_image(image_string)
 
-    num_colors = 5
+    num_colors = 4
     clusters = KMeans(n_clusters = num_colors)
     labels = clusters.fit_predict(image)
 
